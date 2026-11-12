@@ -6,7 +6,7 @@
 
 ## Projeto Integrador Angular
 
-Gerenciador de tarefas desenvolvido na Aula 01 de Angular (Desenvolvimento Front-End), com os desafios bônus.
+Gerenciador de tarefas desenvolvido em Angular.
 
 ### Funcionalidades
 
