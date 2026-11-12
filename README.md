@@ -1,5 +1,11 @@
-UNINASSAU
-Aluno: Allan Victor José Cavalcanti - 01795181 , turma : 4MC
+<h1 align="center">UNINASSAU</h1>
+
+<p align="center">
+  <strong>Aluno:</strong> Allan Victor José Cavalcanti - 01795181<br>
+  <strong>Turma:</strong> 4MC
+</p>
+
+---
 
 # Projeto Integrador Angular
 
