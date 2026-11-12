@@ -1,0 +1,54 @@
+<section class="gerenciador">
+  <h2>Gerenciador de tarefas</h2>
+
+  <div class="formulario">
+    <input
+      type="text"
+      placeholder="Digite uma tarefa"
+      [value]="novaTarefa()"
+      (input)="atualizarTexto($event)"
+      (keydown.enter)="adicionar()"
+    />
+
+    <button (click)="adicionar()" [disabled]="!textoValido()">Adicionar</button>
+  </div>
+
+  @if (textoCurto()) {
+    <p class="aviso">A tarefa precisa ter pelo menos {{ tamanhoMinimo }} caracteres.</p>
+  }
+
+  <div class="resumo">
+    <p>Total: {{ tarefas().length }}</p>
+    <p>Pendentes: {{ pendentes() }}</p>
+    <p>Concluídas: {{ concluidas() }}</p>
+  </div>
+
+  @if (todasConcluidas()) {
+    <p class="parabens">Todas as tarefas foram concluídas!</p>
+  }
+
+  <ul>
+    @for (tarefa of tarefas(); track tarefa.id) {
+      <li>
+        <span [class.concluida]="tarefa.concluida">
+          {{ tarefa.titulo }}
+        </span>
+        <button (click)="alternar(tarefa.id)">
+          {{ tarefa.concluida ? 'Reabrir' : 'Concluir' }}
+        </button>
+        <button class="perigo" (click)="excluir(tarefa.id)">Excluir</button>
+      </li>
+    } @empty {
+      <li class="vazio">Nenhuma tarefa cadastrada.</li>
+    }
+  </ul>
+
+  <div class="rodape">
+    <button (click)="limparConcluidas()" [disabled]="concluidas() === 0">
+      Limpar concluídas
+    </button>
+    <button class="perigo" (click)="apagarTodas()" [disabled]="tarefas().length === 0">
+      Apagar todas
+    </button>
+  </div>
+</section>

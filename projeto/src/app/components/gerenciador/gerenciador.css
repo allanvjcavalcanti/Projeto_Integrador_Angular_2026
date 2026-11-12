@@ -1,0 +1,132 @@
+.gerenciador {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #f8f9fc;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-top: 0;
+  color: #26336e;
+}
+
+.formulario {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  background: #4056a1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #33468a;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.perigo {
+  background: #b3261e;
+}
+
+button.perigo:hover:not(:disabled) {
+  background: #8f1d17;
+}
+
+.resumo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.resumo p,
+.aviso,
+.parabens {
+  margin: 8px 0;
+}
+
+.aviso {
+  color: #b26a00;
+  font-size: 14px;
+}
+
+.parabens {
+  color: #1f7a3d;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 6px;
+}
+
+li span {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+li.vazio {
+  justify-content: center;
+  color: #666;
+}
+
+.concluida {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.rodape {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+@media (max-width: 520px) {
+  .gerenciador {
+    margin: 20px 12px;
+    padding: 16px;
+  }
+
+  .formulario {
+    flex-direction: column;
+  }
+
+  li {
+    flex-wrap: wrap;
+  }
+
+  li span {
+    flex-basis: 100%;
+  }
+}
