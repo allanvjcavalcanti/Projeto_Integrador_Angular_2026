@@ -1,17 +1,14 @@
-<h1 align="center">UNINASSAU</h1>
+# UNINASSAU
 
-<p align="center">
-  <strong>Aluno:</strong> Allan Victor José Cavalcanti - 01795181<br>
-  <strong>Turma:</strong> 4MC
-</p>
+**Aluno:** Allan Victor José Cavalcanti - 01795181
 
----
+**Turma:** 4MC
 
-# Projeto Integrador Angular
+## Projeto Integrador Angular
 
 Gerenciador de tarefas desenvolvido na Aula 01 de Angular (Desenvolvimento Front-End), com os desafios bônus.
 
-## Funcionalidades
+### Funcionalidades
 
 - Cadastro de tarefas pelo botão ou com a tecla Enter
 - Bloqueio de tarefas com menos de 3 caracteres
@@ -21,7 +18,7 @@ Gerenciador de tarefas desenvolvido na Aula 01 de Angular (Desenvolvimento Front
 - Mensagem quando a lista está vazia e quando todas foram concluídas
 - Layout responsivo
 
-## Tecnologias
+### Tecnologias
 
 - Angular 22
 - TypeScript
@@ -29,7 +26,7 @@ Gerenciador de tarefas desenvolvido na Aula 01 de Angular (Desenvolvimento Front
 - Controle de fluxo com @for, @if e @empty
 - CSS
 
-## Como executar
+### Como executar
 
 É preciso ter o Node.js 22.22.3 ou superior instalado.
 
